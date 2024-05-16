@@ -1,0 +1,145 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 40px;
+    color: #ffffff;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .nav-link.active {
+    border: 1px solid #ff00ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-content {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+}
+
+.profile-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-text {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.profile-text h1 {
+    color: #ff00ff;
+    font-size: 32px;
+    margin: 0;
+}
+
+.profile-text h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.profile-text .subtitle {
+    color: #ff00ff;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.profile-text p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ff00ff;
+    margin: 0 5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.event-info {
+    background-color: #ff00ff;
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        height: auto;
+        padding: 20px 10px;
+    }
+}
